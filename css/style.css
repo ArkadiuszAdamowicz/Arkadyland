@@ -117,7 +117,7 @@ header {
   position: relative;
   height: 350px;
   background-image: url("../img/student-g5f5663c68_1280.jpg");
-  background-position: center;
+  background-position: 0 45%;
   background-size: cover;
   z-index: 0;
 }
@@ -299,6 +299,7 @@ footer {
   .carousel-item {
     position: relative;
     height: 600px;
+
   }
   .carousel-item .carousel-img-one {
     background-image: url("../img/software-gaf41e556c_1920.jpg");
@@ -318,5 +319,9 @@ footer {
   }
   .projects-hero {
     background-image: url("../img/projects-big.jpg");
+  }
+
+  .home-passion {
+ background-image: url("../img/student-g8814287f4_1920.jpg");
   }
 }/*# sourceMappingURL=style.css.map */
