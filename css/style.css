@@ -88,15 +88,18 @@ header {
 }
 
 .carousel-img-one {
-  background-image: url("../img/software-g11fc18a6e_1280.jpg");
+  background-image: url("/img/main/software-developer-g0b00db093_1280.jpg");
+ 
 }
 
 .carousel-img-two {
-  background-image: url("../img/hacker-g7d2befa5b_1280.jpg");
+  background-image: url("/img/main/mobile-g9a3cba3df_1280.jpg");
+  background-position: 0 30%;
 }
 
 .carousel-img-three {
-  background-image: url("../img/network-gd81d9cf8d_1280.jpg");
+  background-image: url("/img/office-620817_1280.jpg");
+  background-position: 0 30%;
 }
 
 /* home */
@@ -116,8 +119,8 @@ header {
 .home-passion {
   position: relative;
   height: 350px;
-  background-image: url("../img/student-g5f5663c68_1280.jpg");
-  background-position: 0 45%;
+  background-image: url("/img/student-g5f5663c68_1280.jpg");
+  background-position: center;
   background-size: cover;
   z-index: 0;
 }
@@ -140,7 +143,7 @@ footer {
 }
 
 .aboutus-hero {
-  background-image: url("../img/about/about-hero-small-1.jpg");
+  background-image: url("/img/about/about-hero-small-1.jpg");
   background-position: center;
 }
 
@@ -161,8 +164,8 @@ footer {
   font-size: 2.6rem;
   text-transform: uppercase;
   font-weight: bold;
-  -webkit-text-decoration: underline #ff001e;
-          text-decoration: underline #ff001e;
+  -webkit-text-decoration: underline #0c4a6e;
+          text-decoration: underline #0c4a6e;
 }
 
 .aboutus-text-right {
@@ -185,7 +188,7 @@ footer {
 }
 
 .service-hero {
-  background-image: url("../img/service/service-hero-small.jpg");
+  background-image: url("/img/service/service-hero-small.jpg");
   background-position: 0 55%;
 }
 
@@ -207,28 +210,28 @@ footer {
 }
 
 .service-hero-box.box-one {
-  background-image: url("../img/service/www-big.jpg");
+  background-image: url("/img/service/www-big.jpg");
   background-position: center;
 }
 
 .service-hero-box.box-two {
-  background-image: url("../img/service/copywriting-big.jpg");
+  background-image: url("/img/service/copywriting-big.jpg");
   background-position: center;
 }
 
 .service-hero-box.box-three {
-  background-image: url("../img/service/seo.jpg");
+  background-image: url("/img/service/seo.jpg");
   background-position: bottom;
 }
 
 .service-hero-box.box-four {
-  background-image: url("../img/service/seo-big.jpg");
+  background-image: url("/img/service/seo-big.jpg");
   background-position: 0 30%;
 }
 
 .projects-hero {
-  background-image: url("../img/projects-small.jpg");
-  background-position: center;
+  background-image: url("/img/projects/network-gd81d9cf8d_1280.jpg");
+  background-position: 60%;
 }
 
 .projects img {
@@ -243,7 +246,7 @@ footer {
 }
 
 .contact-hero {
-  background-image: url("../img/projects-big.jpg");
+  background-image: url("/img/contact/network-gbc6d80c75_1280.jpg");
   background-position: 0 40%;
 }
 
@@ -299,29 +302,29 @@ footer {
   .carousel-item {
     position: relative;
     height: 600px;
-
   }
   .carousel-item .carousel-img-one {
-    background-image: url("../img/software-gaf41e556c_1920.jpg");
+    background-image: url("/img/software-gaf41e556c_1920.jpg");
   }
   .carousel-item .carousel-img-two {
-    background-image: url("..img/hacker-ga42b9fae0_1920.jpg");
+    background-image: url("/img/hacker-ga42b9fae0_1920.jpg");
   }
   .carousel-item .carousel-img-three {
-    background-image: url("../img/network-g0be2c89b3_1920.jpg");
+    background-image: url("/img/office-620817_1920.jpg");
   }
   .aboutus-hero {
-    background-image: url("../img/about/about-hero-big-1.jpg");
+    background-image: url("/img/about/about-hero-big-1.jpg");
   }
   .service-hero {
-    background-image: url("../img/service/service-hero-big.jpg");
+    background-image: url("/img/service/service-hero-big.jpg");
     background-position: 0 20%;
   }
   .projects-hero {
-    background-image: url("../img/projects-big.jpg");
+    background-image: url("/img/projects/network-g0be2c89b3_1920.jpg");
   }
 
-  .home-passion {
- background-image: url("../img/student-g8814287f4_1920.jpg");
+  .contact-hero {
+    background-image: url("/img/contact/network-g975a421d8_1920.jpg");
+    background-position: 0 40%;
   }
 }/*# sourceMappingURL=style.css.map */
