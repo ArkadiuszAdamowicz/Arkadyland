@@ -1,0 +1,529 @@
+@import 'colors';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.justify-text {
+	text-align: justify;
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+.top-hero {
+	position: relative;
+	height: 200px;
+	background-size: cover;
+	z-index: 0;
+}
+
+.top-hero-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 3.6rem;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.hide {
+	display: none;
+}
+
+.cookie-box {
+	position: fixed;
+	bottom: 0;
+	background-color: #eee;
+	padding: 2em;
+	font-size: 1.4rem;
+	max-height: 200px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transform: translateY(100%);
+	animation: show-cookies .5s .5s forwards;
+}
+
+.cookie-box::before{
+	position: absolute;
+	top: -280px;
+	right: 50px;
+	width: 400px;
+	height: 400px;
+	background-size: cover;
+	content: ' ';
+}
+
+.cookie-btn {
+	margin-top: 1em;
+	padding: 1em 1.5em;
+	font-size: 1.4rem;
+	border-radius: 8px;
+	color: #fff;
+	border: none;
+	background-color: $main-color;
+	transition: background-color .3s;
+	cursor: pointer;
+}
+.cookie-btn:hover {
+	background-color: #1d77af;
+} 
+
+@keyframes show-cookies {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+}
+
+// nawigacja
+
+nav {
+	font-size: 2rem;
+	background-color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	transition: background-color 0.6s;
+	z-index: 2;
+	a,
+	i {
+		color: $main-color;
+	}
+}
+
+.mint-text {
+	color: $main-color;
+}
+
+.mint-color {
+	background-color: $main-color;
+}
+
+.navbar-togler {
+	font-size: 3rem;
+}
+
+
+.navbar-brand {
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-transform: none;
+}
+
+.navbar-nav  {
+	text-align: center;
+}
+
+header {
+	font-size: 2rem;
+}
+
+.carousel-item {
+	position: relative;
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+}
+
+.carousel-img-one {
+	background-image: url('/dist/img/hero-image-big.jpg');
+	background-position: center;
+}
+
+.carousel-img-two {
+	background-image: url('/dist/img/hero-image-phone-big.jpg');
+	background-position: 30%;
+}
+
+.carousel-img-three {
+	background-image: url('/dist/img/home-image-copywriting-big.jpg');
+	background-position: 0 30%;
+}
+
+/* home */
+.home-boxes {
+	padding: 5em 0;
+}
+
+.home-box {
+	transition: color 0.3s;
+
+}
+
+.home-box:hover {
+	color: $main-color;
+}
+
+.home-box i {
+	font-size: 4rem;
+}
+.home-box h3 {
+	font-size: 2.6rem;
+}
+
+/* ----- */
+
+.home-passion {
+	position: relative;
+	height: 350px;
+	background-image: url('dist/img/hero-passion.jpg');
+	background-position: 0 40%;
+	background-size: cover;
+	z-index: 0;
+}
+
+/* ----- */
+
+.home-brand h3 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.about-me {
+	height: 70%;
+	width: 70%;
+	border-radius: 50%;
+}
+
+footer {
+	font-size: 1.6rem;
+	background-color: rgb(0, 0, 0);
+}
+
+
+.aboutus-hero {
+	background-image: url('/dist/img/about-hero-small-1.jpg');
+	background-position: center;
+}
+
+.aboutus-info {
+	background-color: $about-bg-color;
+}
+
+.aboutus-info .container {
+	padding: 2em 0.5em;
+}
+
+.company-text {
+	font-weight: bold;
+}
+.aboutus-text {
+	padding: 1.8em;
+}
+
+.aboutus-text h3 {
+	margin-bottom: 0.5em;
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: underline $main-color;
+}
+
+.aboutus-text-right {
+	text-align: right;
+}
+
+.aboutus-img {
+	height: 300px;
+	object-fit: cover;
+}
+
+.aboutus-bottom i {
+	font-size: 3rem;
+}
+
+.aboutus-bottom h3 {
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+.card {
+	transition: transform 0.3s;
+}
+
+.card:hover {
+	transform: scale(0.96);
+}
+
+.card-body {
+	.card-title {
+		text-transform: uppercase;
+		margin-bottom: 1em;
+	}
+}
+
+
+.contact-link {
+	text-decoration: none;
+	color: $main-color;
+	font-weight: bold;
+}
+
+.contact-text {
+p{
+	font-size: 2rem;
+}
+}
+
+.service-hero {
+	background-image: url('/dist/img/service-hero-small.jpg');
+	background-position: 0 55%;
+}
+
+.service-hero-box {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	z-index: 0;
+}
+
+.service-hero-box p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 3rem;
+	text-transform: uppercase;
+	transition: transform 0.3s;
+	color: #fff;
+}
+
+.service-hero-box:hover p {
+	transform: scale(1.2);
+}
+
+.service-hero-box.box-one {
+	background-image: url('/dist/img/service-one.jpg');
+	background-position: 0 55%;
+	
+}
+.service-hero-box.box-two {
+	background-image: url('/dist/img/copywriting-big.jpg');
+	background-position: center;
+}
+.service-hero-box.box-three {
+	background-image: url('/dist/img/service-three.jpg');
+	background-position: 0 28%;
+}
+.service-hero-box.box-four {
+	background-image: url('/dist/img/seo-big.jpg');
+	background-position: 0 30%;
+}
+
+.cooperation-box {
+	padding: 2em 1em;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
+	h2 {
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	i {
+		font-size: 5rem;
+		color: $main-color;
+		padding: 15px;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-size: 2rem;
+	}
+}
+
+.projects-hero {
+	background-image: url('/dist/img/prices-hero-small.jpg');
+	background-position: center;
+}
+
+.projects img {
+	height: 240px;
+	object-fit: cover;
+}
+
+.projects .btn {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+.center-box {
+	justify-content: center;
+
+	
+}
+
+.tester {
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-hero {
+	background-image: url('/dist/img/contact-hero-small.jpg');
+	background-position: 0 40%;
+}
+
+.contact h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2.6rem;
+}
+
+.contact-logo {
+	font-size: 3rem;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+	font-size: 1.6rem;
+}
+
+.contact .btn {
+	padding: 0.3em 0.8em;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: $white;
+	background-color: $main-color;
+}
+
+.contact-social {
+	position: relative;
+	height: 350px;
+	background-image: url('/dist/img/social-hero.jpg');
+	background-position: 0 40%;
+	background-size: cover;
+	z-index: 0;
+}
+
+.contact-area {
+	width: 700px;
+	padding: 1em;
+	justify-content: center;
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-item {
+	p {
+		font-size: 1.5em;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font-weight: bold;
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.social-media {
+		font-weight: bold;
+		font-size: 2.5em;
+		i {
+			padding: 0.5em;
+			transition: transform 0.3s;
+		}
+
+		i:hover {
+			transform: scale(1.2);
+		}
+		a {
+			color: $white;
+		}
+
+		a:hover {
+			color: $main-color;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.aboutus-info .container {
+		padding: 0;
+	}
+
+	.aboutus-shadow {
+		box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+	}
+
+	.aboutus-text {
+		padding: 5em 0;
+		transform: skew(-15deg);
+	}
+
+	.aboutus-text-left {
+		padding-right: 2em;
+		text-align: right;
+	}
+
+	.aboutus-text-right {
+		padding-left: 2em;
+		text-align: left;
+	}
+
+	.aboutus-img {
+		height: auto;
+		transform: skew(-15deg);
+	}
+}
+
+@media (min-width: 1400px) {
+	.carousel-item {
+		position: relative;
+		height: 600px;
+	}
+
+	}
+
+
+.home-passion {
+	background-image: url('/dist/img/hero-passion-big.jpg');
+}
+
+.aboutus-hero {
+	background-image: url('/dist/img/about-hero-big-1.jpg');
+}
+.service-hero {
+	background-image: url('/dist/img/service-hero-big.jpg');
+	background-position: 0 20%;
+}
+.projects-hero {
+	background-image: url('/dist/img/prices-hero-big.jpg');
+}
+
+.contact-hero {
+	background-image: url('/dist/img/contact-hero-big.jpg');
+}
