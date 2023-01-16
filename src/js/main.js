@@ -1,13 +1,21 @@
 const cookieBox = document.querySelector('.cookie-box')
 const cookieBtn = document.querySelector('.cookie-btn')
 const footerYear = document.querySelector('.footerYear')
+const navs = document.querySelector('.navbar-collapse')
+const nav = document.querySelector('.navbar')
+const allNavItems = document.querySelectorAll('.nav-link')
+const navList = document.querySelector('.navbar-collapse')
 
+document.addEventListener('click', () => 
+{
+    if(navs.classList.contains('show')) {
+        navs.classList.remove('show')
+    }
+}
+)
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    const nav = document.querySelector('.navbar')
-    const allNavItems = document.querySelectorAll('.nav-link')
-    const navList = document.querySelector('.navbar-collapse')
     
     function addShadow() {
     if (window.scrollY >= 300) {

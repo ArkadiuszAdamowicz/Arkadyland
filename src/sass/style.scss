@@ -97,6 +97,13 @@ body {
 	background-color: #1d77af;
 } 
 
+.underline {
+	margin: 1em auto;
+	width: 150px;
+	height: 4px;
+	background-color: $main-color;
+}
+
 @keyframes show-cookies {
 	to {
 		opacity: 1;
@@ -339,6 +346,12 @@ p{
 	background-position: 0 30%;
 }
 
+
+.coop-box {
+padding-right: 1em;
+padding-left: 1em;
+}
+
 .cooperation-box {
 	padding: 2em 1em;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -366,10 +379,7 @@ p{
 	background-position: center;
 }
 
-.projects img {
-	height: 240px;
-	object-fit: cover;
-}
+
 
 .projects .btn {
 	font-size: 1.4rem;
@@ -378,14 +388,8 @@ p{
 
 .center-box {
 	justify-content: center;
-
-	
 }
 
-.tester {
-	justify-content: center;
-	align-items: center;
-}
 
 .contact-hero {
 	background-image: url('/dist/img/contact-hero-small.jpg');
