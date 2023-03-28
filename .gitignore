@@ -1,4 +1,5 @@
 node_modules
-package
-package-lock
-gulpfile
+gulpfile.js
+package.json
+package-lock.json
+page.html

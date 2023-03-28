@@ -16,7 +16,6 @@ html {
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.6rem;
-
 }
 
 .shadow-bg {
@@ -138,6 +137,9 @@ nav {
 	font-size: 3rem;
 }
 
+.navbar-toggler-icon {
+	padding: 1.5em;
+}
 
 .navbar-brand {
 	font-size: 2.4rem;
@@ -152,6 +154,13 @@ nav {
 header {
 	font-size: 2rem;
 }
+
+
+.about-text {
+padding: 0.5em;
+}
+
+
 
 .carousel-item {
 	position: relative;
@@ -474,7 +483,56 @@ padding-left: 1em;
 	}
 }
 
+.home-passion {
+	background-image: url('/dist/img/hero-passion-big.jpg');
+}
+
+.aboutus-hero {
+	background-image: url('/dist/img/about-hero-big-1.jpg');
+}
+.service-hero {
+	background-image: url('/dist/img/service-hero-big.jpg');
+	background-position: 0 20%;
+}
+.projects-hero {
+	background-image: url('/dist/img/prices-hero-big.jpg');
+}
+
+.contact-hero {
+	background-image: url('/dist/img/contact-hero-big.jpg');
+}
+
+
+@media (min-width: 576px) {
+
+	.about-text {
+		text-align: justify;
+		}
+
+.about-me {
+	height: 100%;
+	width: 100%;
+	margin: 2em;
+}
+}
+
+@media (min-width: 768px) {
+
+	.about-me {
+		height: 90%;
+		width: 90%;
+		margin: 2em;
+	}
+	}
+
 @media (min-width: 992px) {
+
+	.about-me {
+		height: 70%;
+		width: 70%;
+		margin: 2em;
+	}
+
 	.aboutus-info .container {
 		padding: 0;
 	}
@@ -510,24 +568,19 @@ padding-left: 1em;
 		height: 600px;
 	}
 
+
+
 	}
 
+@media (min-width: 2000px) {
+	.contact {
+		margin: 3em;
+	}
 
-.home-passion {
-	background-image: url('/dist/img/hero-passion-big.jpg');
-}
-
-.aboutus-hero {
-	background-image: url('/dist/img/about-hero-big-1.jpg');
-}
-.service-hero {
-	background-image: url('/dist/img/service-hero-big.jpg');
-	background-position: 0 20%;
-}
-.projects-hero {
-	background-image: url('/dist/img/prices-hero-big.jpg');
+	.cooperation {
+		margin: 1em;
+	}
 }
 
-.contact-hero {
-	background-image: url('/dist/img/contact-hero-big.jpg');
-}
+
+
